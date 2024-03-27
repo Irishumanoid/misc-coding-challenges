@@ -1,5 +1,3 @@
-package cse143exercises.ProgrammingClubChallenges;
-
 public class PigLatin {
 
     public void toPigLatin(String english) {
