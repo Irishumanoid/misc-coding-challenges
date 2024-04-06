@@ -27,7 +27,7 @@ public class Pixels {
         SwingUtilities.invokeLater(() -> {
             List<Tuple<Integer, Integer>> polygonCoords = Arrays.asList(
             new Tuple<>(100, 100),
-            new Tuple<>(130, 120),
+            new Tuple<>(135, 120),
             new Tuple<>(140, 130)
         );
 
@@ -171,6 +171,8 @@ public class Pixels {
         PointType type = null;
         int numAbove = 0, numBelow = 0, numOnLine = 0;
         for (Tuple<Double, Double> line : boundingEqs) {
+            System.out.println("point on line: " + line.getFirst()*x + line.getSecond());
+            System.out.println("y val: " + y);
             if (y > line.getFirst()*x + line.getSecond()) {
                 numAbove++;
             } else if (y < line.getFirst()*x + line.getSecond()) {
@@ -180,19 +182,22 @@ public class Pixels {
                 System.out.println("slope: " + line.getFirst() + " y-intercept: " + line.getSecond());
                 numOnLine++;
             }
-            System.out.println("num above: " + numAbove);
-            System.out.println("num below: " + numBelow);
-            System.out.println("num on line: " + numOnLine);
-            System.out.println("-------------------------------------");
-
-            if (numAbove == 0 || numBelow == 0) {
-                type = PointType.OUTSIDE;
-            } else {
-                type = PointType.INSIDE;
-            }
         }
+
+        System.out.println("num above: " + numAbove);
+        System.out.println("num below: " + numBelow);
+        System.out.println("num on line: " + numOnLine);
+        System.out.println("-------------------------------------");
+
+        if (numAbove == 0 || numBelow == 0) {
+            type = PointType.OUTSIDE;
+        } else {
+            type = PointType.INSIDE;
+        }
+
         return type;
     }
+    
 
     //finds any intersections of square with bounding eqs to calculate percentage included
     public double calculateIntensity(int pixelX, int pixelY, List<Tuple<Double, Double>> boundingEqs) {
