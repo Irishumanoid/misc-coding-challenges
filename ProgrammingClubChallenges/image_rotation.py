@@ -1,5 +1,6 @@
 from PIL import Image
 import numpy as np
+import math
 
 def load_image(image_path) -> list:
     im_frame = Image.open(image_path)
@@ -26,6 +27,12 @@ def rotate90Clockwise(A):
             A_new[j][N - 1 - i] = temp
     return A_new
 
+def rotateByNDegrees(cur_mat, n):
+    rads = n*math.pi/180
+    trans_mat = np.array([math.cos(rads), math.sin(rads)], [-math.sin(rads), math.cos(rads)])
+    return np.matmul(cur_mat, trans_mat)
+
+
 pixels = load_image('/Users/irislitiu/Desktop/test.png')
 rotated = rotate90Clockwise(pixels)
 width, height = len(rotated), len(rotated[0])
@@ -35,6 +42,3 @@ for i in range(width):
         im.putpixel((i,j), rotated[i][j])
 
 im.show("rotated image")
-
-
-
