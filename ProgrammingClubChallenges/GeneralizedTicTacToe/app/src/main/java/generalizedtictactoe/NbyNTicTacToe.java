@@ -102,23 +102,29 @@ public class NbyNTicTacToe {
         return this.isGameOver;
     }
 
+    public void resetGame() {
+        this.isGameOver = false;
+    }
+
     //check if current piece played creates a win
     public boolean isGameOver(Tuple<Integer, Integer> newPieceLoc) {
         //check if piece is on a diagonal
+        int LRDiagCounter = 0;
         if (newPieceLoc.getFirst() == newPieceLoc.getSecond()) {
+            PieceType firstPiece = this.gridState.get(0).get(0);
             for (int i = 0; i < this.gridSize; i++) {
-                if (this.gridState.get(i).get(i) != this.curPiece) {
-                    break;
+                if (this.gridState.get(i).get(i) == firstPiece) {
+                    LRDiagCounter++;
                 }
-                if (i == this.gridSize) return true; // if entire LR diagonal has the same piece
             }
         }
-        if (newPieceLoc.getFirst() + newPieceLoc.getSecond() == this.gridSize) {
+        int RLDiagCounter = 0;
+        if (newPieceLoc.getFirst() + newPieceLoc.getSecond() == this.gridSize-1) {
+            PieceType firstPiece = this.gridState.get(0).get(this.gridSize);
             for (int i = 0; i < this.gridSize; i++) {
-                if (this.gridState.get(i).get(2-i) != this.curPiece) {
-                    break;
+                if (this.gridState.get(i).get(this.gridSize-i) == firstPiece) {
+                    RLDiagCounter++;
                 }
-                if (i == this.gridSize) return true; // if entire RL diagonal has the same piece
             }
         }
         //check all pieces on same row or all on same column
@@ -127,11 +133,12 @@ public class NbyNTicTacToe {
             if (this.gridState.get(newPieceLoc.getFirst()).get(i) == this.curPiece) {
                 rowCounter++;
             }
-            if (this.gridState.get(i).get(newPieceLoc.getSecond()) != this.curPiece) {
+            if (this.gridState.get(i).get(newPieceLoc.getSecond()) == this.curPiece) {
                 colCounter++;
             }
         }
-        if (rowCounter == this.gridSize || colCounter == this.gridSize) {
+
+        if (LRDiagCounter == this.gridSize || RLDiagCounter == this.gridSize || rowCounter == this.gridSize || colCounter == this.gridSize) {
             return true;
         }
 
