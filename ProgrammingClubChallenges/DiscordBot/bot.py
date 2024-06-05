@@ -3,26 +3,37 @@ import random
 import discord
 from discord.ext import commands
 from dotenv import load_dotenv
-
 from flask import Flask, request, jsonify
 from discord_interactions import verify_key_decorator, InteractionType, InteractionResponseType
+import threading
 
-#setup
+# setup
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
 GUILD = os.getenv('DISCORD_GUILD')
+CLIENT_PUBLIC_KEY = os.getenv('CLIENT_PUBLIC_KEY')
 intents = discord.Intents.default()
 intents.message_content = True
 
 app = Flask(__name__)
 bot = commands.Bot(command_prefix='!', intents=intents)
 
+@app.route('/interactions', methods=['POST'])
+@verify_key_decorator(CLIENT_PUBLIC_KEY)
+def interactions():
+    if request.json['type'] == InteractionType.APPLICATION_COMMAND:
+        return jsonify({
+            'type': InteractionResponseType.CHANNEL_MESSAGE_WITH_SOURCE,
+            'data': {
+                'content': 'Hello world'
+            }
+        })
+
 @bot.event
 async def on_ready():
     guild = discord.utils.find(lambda g: g.name == GUILD, bot.guilds)
-
     await bot.wait_until_ready()
-    print(f'{bot.user} is connected to: \n'
+    print(f'{bot.user} is connected to:\n'
           f'{guild.name} (id: {guild.id})')
     members = '\n - '.join([member.name for member in guild.members])
     print(f'Guild members:\n - {members}')
@@ -36,9 +47,9 @@ async def on_member_join(member):
 
 @bot.event
 async def on_message(message):
-    if message.author == bot.user: #prevent recursion (bot responds to its own message)
-        return 
-    
+    if message.author == bot.user:  # prevent recursion (bot responds to its own message)
+        return
+
     if 'happy birthday' in message.content.lower():
         response = random.choice(["happy bday math clubian!", "la multi ani!", "joyeuse anniversaire!"])
         await message.channel.send(response)
@@ -50,9 +61,8 @@ async def on_message(message):
         await message.channel.send(response)
     elif message.content == 'raise-exception':
         raise discord.DiscordException
-    
-    await bot.process_commands(message)
 
+    await bot.process_commands(message)
 
 @bot.command(name='number_gen', help='generates random numbers given a min, max, and number of numbers to output')
 async def number_generator(ctx, min: int, max: int, num_nums: int):
@@ -74,7 +84,6 @@ async def command_error(ctx, error):
     if isinstance(error, commands.errors.CheckFailure):
         await ctx.send('You do not have the correct role for this command')
 
-
 @bot.event
 async def on_error(event, *args, **kwargs):
     with open('err.log', 'a') as f:
@@ -83,5 +92,14 @@ async def on_error(event, *args, **kwargs):
         else:
             raise
 
+def run_discord_bot():
+    bot.run(TOKEN)
 
-bot.run(TOKEN)
+def run_flask_app():
+    app.run(port=5000)
+
+if __name__ == '__main__':
+    discord_thread = threading.Thread(target=run_discord_bot)
+    flask_thread = threading.Thread(target=run_flask_app)
+    discord_thread.start()
+    flask_thread.start()
