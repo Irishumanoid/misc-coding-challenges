@@ -11,7 +11,7 @@ import threading
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
 GUILD = os.getenv('DISCORD_GUILD')
-#CLIENT_PUBLIC_KEY = os.getenv('CLIENT_PUBLIC_KEY')
+CLIENT_PUBLIC_KEY = os.getenv('CLIENT_PUBLIC_KEY')
 intents = discord.Intents.default()
 intents.message_content = True
 
@@ -19,7 +19,7 @@ app = Flask(__name__)
 bot = commands.Bot(command_prefix='!', intents=intents)
 
 @app.route('/interactions', methods=['POST'])
-#@verify_key_decorator(CLIENT_PUBLIC_KEY)
+@verify_key_decorator(CLIENT_PUBLIC_KEY)
 def interactions():
     if request.json['type'] == InteractionType.APPLICATION_COMMAND:
         return jsonify({
