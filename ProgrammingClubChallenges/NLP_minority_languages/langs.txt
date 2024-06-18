@@ -1,0 +1,62 @@
+Afrikaans : 130640
+Amharic : 43102
+Egyptian Arabic : 79928
+Bishnupriya : 1770
+Bihari : 82
+Bengali : 1114481
+Somali : 42
+Swahili : 24803
+Malagasy : 13343
+Kurdish : 29054
+Northern Luri : 72
+South Azerbaijani : 9985
+Western Panjabi : 3463
+Western Mari : 669
+Maithili : 25
+Burmese : 136639
+Erzya : 5
+Mazanderani : 917
+Mirandese : 7
+Nepali : 219334
+Newari : 2126
+Goan Konkani : 484
+Minangkabau : 166
+Kannada : 251064
+Javanese : 1163
+Limburgish : 118
+Lombard : 1374
+Guarani : 68
+Gujarati : 169834
+Bashkir : 27050
+Chechen : 2984
+Cebuano : 26145
+Divehi : 17024
+Iloko : 1578
+Lojban : 617
+Kazakh : 338073
+Khmer : 108346
+Karachay-Balkar : 1377
+Komi : 924
+Lezghian : 1381
+Lao : 32652
+Malay : 183443
+Panjabi : 87235
+Piemontese : 2859
+Pashto : 67921
+Yakut : 8555
+Sindhi : 33925
+Sinhala : 120684
+Sundanese : 511
+Tamil : 833101
+Telugu : 312644
+Tajik : 56259
+Turkmen : 4694
+Tagalog : 294132
+Tatar : 82738
+Uyghur : 15503
+Urdu : 428674
+Volapük : 3317
+Walloon : 677
+Waray : 9161
+Yiddish : 32919
+Yoruba : 49
