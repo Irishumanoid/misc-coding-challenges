@@ -2,6 +2,38 @@ from discord.ext import commands
 import random
 import json
 from enum import Enum
+import urllib.request as libreq
+
+def get_text_between_substrings(text, first, second):
+    chunks = text.split(first)
+    final_segs = []
+    for chunk in chunks[1:]:
+        if second in chunk:
+            final_segs.append(chunk.split(second)[0].strip())
+    return final_segs
+
+
+def generate_query_arxiv(max_results, input):
+    args_str = ':'
+    params = input.split(',')
+    if len(params) > 1:
+        args_str += '+AND+all:'.join([param for param in params])
+    else:
+        param += params[0]
+    print(args_str + '\n\n\n\n')
+    with libreq.urlopen(f'http://export.arxiv.org/api/query?search_query=all{args_str}&start=0&max_results={max_results}') as url:
+        r = url.read()
+        article_title = get_text_between_substrings(str(r), '<title>', '</title>')
+        article_info = get_text_between_substrings(str(r), '<summary>', '</summary>') 
+        link = get_text_between_substrings(str(r), '<link title="pdf" href="', '" rel="related" type="application/pdf"/>')
+
+        all_info = ''
+        for i in range(len(article_info)):
+            concat_info = article_title[i] + '\n' + '-'*10 + '\n' + article_info[i] + '\n' + '-'*10 + '\n' + link[i] + '\n'
+            all_info += concat_info + '\n\n\n'
+        
+        print(all_info)
+        return all_info
 
 class MathCommands(commands.Cog):
     def __init__(self, bot):
@@ -41,6 +73,10 @@ class MathCommands(commands.Cog):
         except Exception as e:
             print(f'Error: {e}')
             await ctx.send('An error occurred while fetching the math question.')
+
+    @commands.command(name='get_academic_paper', help='get a paper rec by providing the number of recs you want and an array of strings of your prefered topics')
+    async def get_paper_rec(self, ctx, num_results, pref_list):
+        await ctx.send(f'Here are your paper recommendation {ctx.author.name} \n' + generate_query_arxiv(num_results, pref_list))
 
 
 async def setup(bot):
