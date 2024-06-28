@@ -8,7 +8,6 @@ from dotenv import load_dotenv
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
 GUILD = os.getenv('DISCORD_GUILD')
-CLIENT_PUBLIC_KEY = os.getenv('CLIENT_PUBLIC_KEY')
 intents = discord.Intents.default()
 intents.message_content = True
 

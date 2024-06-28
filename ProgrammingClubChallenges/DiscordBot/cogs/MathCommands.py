@@ -37,6 +37,15 @@ def generate_query_arxiv(max_results, input):
         print(all_info)
         return all_info
 
+async def query_math_engine(ctx, expr, type):
+    try:
+        root = f'https://newton.vercel.app/api/v2/{type}/'+expr
+        with libreq.urlopen(root) as url:
+            res = json.loads(url.read().decode())['result']
+            await ctx.send(res)
+    except SyntaxError as e:
+        await ctx.send(f'Your expression input is invalid, please try again: {e}')
+
 class MathCommands(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
@@ -79,6 +88,34 @@ class MathCommands(commands.Cog):
     @commands.command(name='get_academic_paper', help='get a paper rec by providing the number of recs you want and an array of strings of your prefered topics')
     async def get_paper_rec(self, ctx, num_results, pref_list):
         await ctx.send(f'Here is your paper recommendation {ctx.author.name} \n' + generate_query_arxiv(num_results, pref_list))
+
+    @commands.command(name='simplify_expr', help='pass in expression you would like to simplify')
+    async def simplify_expression(self, ctx, expr):
+        await query_math_engine(ctx, expr, 'simplify')
+
+    @commands.command(name='derive', help='take the derivative of an expression')
+    async def differentiate_expression(self, ctx, expr):
+        await query_math_engine(ctx, expr, 'derive')
+
+    @commands.command(name='integrate', help='take the integral of an expression')
+    async def integrate_expression(self, ctx, expr):
+        await query_math_engine(ctx, expr, 'integrate')
+
+    @commands.command(name='factor', help='factor an expression')
+    async def integrate_expression(self, ctx, expr):
+        await query_math_engine(ctx, expr, 'factor')
+    
+    @commands.command(name='find_zeros', help='find the zeros of an expression')
+    async def integrate_expression(self, ctx, expr):
+        await query_math_engine(ctx, expr, 'zeros')
+    
+    @commands.command(name='tangent', help='find the tangent line to a line at a point: [point]|[expr] like 2|x^2')
+    async def integrate_expression(self, ctx, expr):
+        await query_math_engine(ctx, expr, 'tangent')
+    
+    @commands.command(name='area_under_curve', help='find the area under a curve: [start:end]|[expr] like [2:4]|x^2')
+    async def integrate_expression(self, ctx, expr):
+        await query_math_engine(ctx, expr, 'area')
 
 
 async def setup(bot):

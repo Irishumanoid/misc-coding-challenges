@@ -2,6 +2,7 @@ import urllib.request as libreq
 import urllib.parse
 import json
 import random
+import aionewton
 
 def get_nasa_media(query, keywords='', media_type='', max_retries=50):
     base_str = f'https://images-api.nasa.gov/search?q={query}'
@@ -41,5 +42,3 @@ def get_nasa_media(query, keywords='', media_type='', max_retries=50):
     except IOError as e:
         print(f'URL could not be parsed: {e}')
 
-# Example usage
-get_nasa_media('moon', media_type='video')
