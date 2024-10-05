@@ -1,4 +1,10 @@
 from datasets import load_dataset, DatasetDict
+import os
+import datasets
+
+os.environ['HF_HOME'] = '/tmp/huggingface_cache'
+datasets.config.HF_DATASETS_CACHE = "/tmp/huggingface_cache"
+
 
 african_languages = {
     "en": "English",
@@ -60,15 +66,3 @@ def multi_lang_gen():
             generate_language_data_two_langs(dataset_name="Helsinki-NLP/opus-100", lang=lang, second_lang=second_lang)
 
 
-ds = load_dataset('bible-nlp/biblenlp-corpus', streaming=True)['train']
-freq_map = {}
-for d in ds:
-    if d['lang'] in freq_map.keys():
-        freq_map[d['lang']] += 1
-    else:
-        freq_map[d['lang']] = 1
-
-for key in freq_map.keys():
-    lang = key
-    freq = freq_map[key]
-    print(f'language is {lang} with {freq} rows')
