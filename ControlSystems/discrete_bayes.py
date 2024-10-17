@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib.animation import FuncAnimation
+from matplotlib.patches import Patch
 import math
 from filterpy.discrete_bayes import predict
 from filterpy.discrete_bayes import update
@@ -82,7 +83,7 @@ def discrete_bayes_sim(kernel, measurements, z_prob, sensor_dist, n):
 def animate_discrete_bayes(priors, posteriors, num_locs):
     fig, ax = plt.subplots()
     x = np.arange(num_locs)
-    bar_container = ax.bar(x, priors[0])
+    bar_container = ax.bar(x, priors[0], color="red")
 
     def update(step):
         step -= 1
@@ -90,12 +91,19 @@ def animate_discrete_bayes(priors, posteriors, num_locs):
         
         if i % 2 == 0:
             cur = priors[i]
+            color = "red"
         else:
             cur = posteriors[i]
+            color = "blue"
 
         for bar, height in zip(bar_container, cur):
             bar.set_height(height)
+            bar.set_color(color)
         ax.set_title(f'Step {step}')
+    
+    red_patch = Patch(color="red", label="Prior")
+    blue_patch = Patch(color="blue", label="Posterior")
+    ax.legend(handles=[red_patch, blue_patch])
     
     animation = FuncAnimation(fig, update, frames=len(priors), repeat=False)
     plt.show()
