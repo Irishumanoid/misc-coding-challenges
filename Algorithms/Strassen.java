@@ -101,7 +101,10 @@ public class Strassen {
     }
     public static void main(String[] args) {
         Strassen s = new Strassen();
-        double[][] out = s.multiplyMatrices(new double[][]{{10, 1, 1, 1}, {1, 1, 1, 1}, {1, 1, 1, 1}, {1, 1, 1, 1}}, new double[][]{{1, 1, 1, 1}, {1, 1, 1, 1}, {1, 1, 1, 1}, {1, 1, 1, 1}});
+        double[][] out = s.multiplyMatrices(
+            new double[][]{{4, 5, 5, 7}, {2, 9, 3, 8}, {4, 3, 7, 1}, {5, 2, 7, 8}}, 
+            new double[][]{{3, 9, 2, 3}, {5, 9, 4, 2}, {3, 3, 6, 8}, {2, 2, 1, 6}}
+        );
         for (int i = 0; i < out[0].length; i++) {
             for (int j = 0; j < out.length; j++) {
                 System.out.printf("%f ", out[i][j]);
