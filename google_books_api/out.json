@@ -1,0 +1,811 @@
+{
+    "kind": "books#volumes",
+    "totalItems": 1000000,
+    "items": [
+        {
+            "kind": "books#volume",
+            "id": "_zSzAwAAQBAJ",
+            "etag": "NjvSHKI8X3o",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/_zSzAwAAQBAJ",
+            "volumeInfo": {
+                "title": "The Hunger Games",
+                "authors": [
+                    "Suzanne Collins"
+                ],
+                "publisher": "Scholastic",
+                "publishedDate": "2011-12",
+                "description": "First in the ground-breaking HUNGER GAMES trilogy. In a vision of the near future, a terrifying reality TV show is taking place. Twelve boys and twelve girls are forced to appear in a live event called The Hunger Games. There is only one rule: kill or be killed. But Katniss has been close to death before. For her, survival is second nature.",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9781407133171"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "1407133179"
+                    }
+                ],
+                "readingModes": {
+                    "text": true,
+                    "image": false
+                },
+                "pageCount": 302,
+                "printType": "BOOK",
+                "categories": [
+                    "Juvenile Fiction"
+                ],
+                "averageRating": 4.5,
+                "ratingsCount": 52,
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": true,
+                "contentVersion": "2.2.3.0.preview.2",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=_zSzAwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=_zSzAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=_zSzAwAAQBAJ&printsec=frontcover&dq=intitle:hunger+games&hl=&cd=1&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=_zSzAwAAQBAJ&dq=intitle:hunger+games&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/The_Hunger_Games.html?hl=&id=_zSzAwAAQBAJ"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.com/books/download/The_Hunger_Games-sample-epub.acsm?id=_zSzAwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "pdf": {
+                    "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=_zSzAwAAQBAJ&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "First in the ground-breaking HUNGER GAMES trilogy. In a vision of the near future, a terrifying reality TV show is taking place. Twelve boys and twelve girls are forced to appear in a live event called The Hunger Games."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "WJ7i0AEACAAJ",
+            "etag": "X5uCl92jQrM",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/WJ7i0AEACAAJ",
+            "volumeInfo": {
+                "title": "The Hunger Games (illustrated Edition)",
+                "authors": [
+                    "Suzanne Collins"
+                ],
+                "publishedDate": "2024",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "1761640992"
+                    },
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9781761640995"
+                    }
+                ],
+                "readingModes": {
+                    "text": false,
+                    "image": false
+                },
+                "pageCount": 0,
+                "printType": "BOOK",
+                "categories": [
+                    "Contests"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "preview-1.0.0",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=WJ7i0AEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=WJ7i0AEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=WJ7i0AEACAAJ&dq=intitle:hunger+games&hl=&cd=2&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=WJ7i0AEACAAJ&dq=intitle:hunger+games&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/The_Hunger_Games_illustrated_Edition.html?hl=&id=WJ7i0AEACAAJ"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "NO_PAGES",
+                "embeddable": false,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": false
+                },
+                "pdf": {
+                    "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=WJ7i0AEACAAJ&hl=&source=gbs_api",
+                "accessViewStatus": "NONE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "Even at the age of sixteen, Katniss Everdeen knows it takes hard work, keen observation, and inner fortitude to survive in the world."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "ZzV6DwAAQBAJ",
+            "etag": "AIUc3Z2fhNo",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/ZzV6DwAAQBAJ",
+            "volumeInfo": {
+                "title": "Hunger Games Trilogy 1: The Hunger Games: Anniversary Edition",
+                "authors": [
+                    "Suzanne Collins"
+                ],
+                "publisher": "Scholastic UK",
+                "publishedDate": "2019-01-03",
+                "description": "This 10th Anniversary Edition of THE HUNGER GAMES contains more than fifty pages of new bonus material, including the most extensive interview Suzanne Collins has given since the publication of The Hunger Games, which provides an absorbing behind-the-scenes look at the creation of the series; and an engaging archival conversation between Suzanne Collins and YA legend Walter Dean Myers on writing about war. Set in a dark vision of the near future, a terrifying reality TV show is taking place. Twelve boys and twelve girls are forced to appear in a live event called The Hunger Games. There is only one rule: kill or be killed. When sixteen-year-old Katniss Everdeen steps forward to take her younger sister's place in the games, she sees it as a death sentence. But Katniss has been close to death before. For her, survival is second nature.",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9781407196183"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "1407196189"
+                    }
+                ],
+                "readingModes": {
+                    "text": true,
+                    "image": true
+                },
+                "pageCount": 334,
+                "printType": "BOOK",
+                "categories": [
+                    "Juvenile Fiction"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": true,
+                "contentVersion": "1.3.3.0.preview.3",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=ZzV6DwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=ZzV6DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=ZzV6DwAAQBAJ&printsec=frontcover&dq=intitle:hunger+games&hl=&cd=3&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=ZzV6DwAAQBAJ&dq=intitle:hunger+games&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/Hunger_Games_Trilogy_1_The_Hunger_Games.html?hl=&id=ZzV6DwAAQBAJ"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.com/books/download/Hunger_Games_Trilogy_1_The_Hunger_Games-sample-epub.acsm?id=ZzV6DwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "pdf": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.com/books/download/Hunger_Games_Trilogy_1_The_Hunger_Games-sample-pdf.acsm?id=ZzV6DwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=ZzV6DwAAQBAJ&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "This 10th Anniversary Edition of THE HUNGER GAMES contains more than fifty pages of new bonus material, including the most extensive interview Suzanne Collins has given since the publication of The Hunger Games, which provides an absorbing ..."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "B0jgDwAAQBAJ",
+            "etag": "jkHZLaRZMTw",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/B0jgDwAAQBAJ",
+            "volumeInfo": {
+                "title": "Hunger Games 4-Book Digital Collection (The Hunger Games, Catching Fire, Mockingjay, The Ballad of Songbirds and Snakes)",
+                "authors": [
+                    "Suzanne Collins"
+                ],
+                "publisher": "Scholastic Inc.",
+                "publishedDate": "2020-10-06",
+                "description": "This digital collection includes all three books in Suzanne Collins's internationally bestselling Hunger Games trilogy together with The Ballad of Songbirds and Snakes. In the ruins of a place once known as North America lies the nation of Panem, a shining Capitol surrounded by twelve outlying districts. The Capitol keeps the districts in line by forcing them all to send one boy and one girl between the ages of twelve and eighteen to participate in the annual Hunger Games, a fight to the death on live TV...And the odds are against all who play.With all four of Suzanne Collins's Hunger Games novels in one digital collection, you can step into the world of Panem with the 10th annual Hunger Games, and continue all the way to the electrifying conclusion.",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9781338715255"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "1338715259"
+                    }
+                ],
+                "readingModes": {
+                    "text": true,
+                    "image": true
+                },
+                "pageCount": 2120,
+                "printType": "BOOK",
+                "categories": [
+                    "Young Adult Fiction"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": true,
+                "contentVersion": "1.4.4.0.preview.3",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=B0jgDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=B0jgDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=B0jgDwAAQBAJ&printsec=frontcover&dq=intitle:hunger+games&hl=&cd=4&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=B0jgDwAAQBAJ&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=B0jgDwAAQBAJ"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                    "amount": 42.99,
+                    "currencyCode": "USD"
+                },
+                "retailPrice": {
+                    "amount": 42.99,
+                    "currencyCode": "USD"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=B0jgDwAAQBAJ&rdid=book-B0jgDwAAQBAJ&rdot=1&source=gbs_api",
+                "offers": [
+                    {
+                        "finskyOfferType": 1,
+                        "listPrice": {
+                            "amountInMicros": 42990000,
+                            "currencyCode": "USD"
+                        },
+                        "retailPrice": {
+                            "amountInMicros": 42990000,
+                            "currencyCode": "USD"
+                        },
+                        "giftable": true
+                    }
+                ]
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.com/books/download/Hunger_Games_4_Book_Digital_Collection_T-sample-epub.acsm?id=B0jgDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "pdf": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.com/books/download/Hunger_Games_4_Book_Digital_Collection_T-sample-pdf.acsm?id=B0jgDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=B0jgDwAAQBAJ&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "This digital collection includes all three books in Suzanne Collins&#39;s internationally bestselling Hunger Games trilogy together with The Ballad of Songbirds and Snakes."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "WXVGBAAAQBAJ",
+            "etag": "ot1/x/g5AjQ",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/WXVGBAAAQBAJ",
+            "volumeInfo": {
+                "title": "The World of the Hunger Games",
+                "authors": [
+                    "Kate Egan"
+                ],
+                "publisher": "Scholastic UK",
+                "publishedDate": "2012-03-24",
+                "description": "Welcome to Panem, the world of The Hunger Games. This is the definitive, richly illustrated, full-colour guide to all the districts of Panem, all the participants in The Hunger Games, and the life and home of Katniss Everdeen. A must-have for fans of both the Hunger Games novels and the new Hunger Games film.",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9781407134741"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "1407134744"
+                    }
+                ],
+                "readingModes": {
+                    "text": true,
+                    "image": true
+                },
+                "pageCount": 151,
+                "printType": "BOOK",
+                "categories": [
+                    "Juvenile Fiction"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "1.2.2.0.preview.3",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=WXVGBAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=WXVGBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=WXVGBAAAQBAJ&printsec=frontcover&dq=intitle:hunger+games&hl=&cd=5&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=WXVGBAAAQBAJ&dq=intitle:hunger+games&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/The_World_of_the_Hunger_Games.html?hl=&id=WXVGBAAAQBAJ"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.com/books/download/The_World_of_the_Hunger_Games-sample-epub.acsm?id=WXVGBAAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "pdf": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.com/books/download/The_World_of_the_Hunger_Games-sample-pdf.acsm?id=WXVGBAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=WXVGBAAAQBAJ&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "Welcome to Panem, the world of The Hunger Games. This is the definitive, richly illustrated, full-colour guide to all the districts of Panem, all the participants in The Hunger Games, and the life and home of Katniss Everdeen."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "zM-vZ-JiSFYC",
+            "etag": "NHNMmuq/AMs",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/zM-vZ-JiSFYC",
+            "volumeInfo": {
+                "title": "The Hunger Games Trilogy",
+                "authors": [
+                    "Suzanne Collins"
+                ],
+                "publisher": "Scholastic Inc.",
+                "publishedDate": "2011-05-01",
+                "description": "The stunning Hunger Games trilogy is complete! The extraordinary, ground breaking New York Times bestsellers The Hunger Games and Catching Fire, along with the third book in The Hunger Games trilogy by Suzanne Collins, Mockingjay, are available for the first time ever in e-book. Stunning, gripping, and powerful.",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9780545387200"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "0545387205"
+                    }
+                ],
+                "readingModes": {
+                    "text": true,
+                    "image": true
+                },
+                "pageCount": 1517,
+                "printType": "BOOK",
+                "categories": [
+                    "Young Adult Fiction"
+                ],
+                "averageRating": 4,
+                "ratingsCount": 1475,
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": true,
+                "contentVersion": "2.25.27.0.preview.3",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=zM-vZ-JiSFYC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=zM-vZ-JiSFYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=zM-vZ-JiSFYC&printsec=frontcover&dq=intitle:hunger+games&hl=&cd=6&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=zM-vZ-JiSFYC&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=zM-vZ-JiSFYC"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                    "amount": 25.99,
+                    "currencyCode": "USD"
+                },
+                "retailPrice": {
+                    "amount": 25.99,
+                    "currencyCode": "USD"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=zM-vZ-JiSFYC&rdid=book-zM-vZ-JiSFYC&rdot=1&source=gbs_api",
+                "offers": [
+                    {
+                        "finskyOfferType": 1,
+                        "listPrice": {
+                            "amountInMicros": 25990000,
+                            "currencyCode": "USD"
+                        },
+                        "retailPrice": {
+                            "amountInMicros": 25990000,
+                            "currencyCode": "USD"
+                        },
+                        "giftable": true
+                    }
+                ]
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.com/books/download/The_Hunger_Games_Trilogy-sample-epub.acsm?id=zM-vZ-JiSFYC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "pdf": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.com/books/download/The_Hunger_Games_Trilogy-sample-pdf.acsm?id=zM-vZ-JiSFYC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=zM-vZ-JiSFYC&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "The extraordinary, ground breaking New York Times bestsellers The Hunger Games and Catching Fire, along with the third book in The Hunger Games trilogy by Suzanne Collins, Mockingjay, are available for the first time ever in e-book."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "7mlGBAAAQBAJ",
+            "etag": "rAFU2ZkqbZw",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/7mlGBAAAQBAJ",
+            "volumeInfo": {
+                "title": "The Hunger Games Official Illustrated Movie Companion",
+                "authors": [
+                    "Kate Egan"
+                ],
+                "publisher": "Scholastic UK",
+                "publishedDate": "2012-03-24",
+                "description": "Go behind the scenes of the making of THE HUNGER GAMES with exclusive images and interviews. From the screenwriting process to the casting decisions to the elaborate sets and costumes to the actors' performances and directors' vision, this is the definitive companion to the breathtaking movie.",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9781407134727"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "1407134728"
+                    }
+                ],
+                "readingModes": {
+                    "text": false,
+                    "image": true
+                },
+                "pageCount": 186,
+                "printType": "BOOK",
+                "categories": [
+                    "Juvenile Nonfiction"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "0.2.1.0.preview.1",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=7mlGBAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=7mlGBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=7mlGBAAAQBAJ&printsec=frontcover&dq=intitle:hunger+games&hl=&cd=7&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=7mlGBAAAQBAJ&dq=intitle:hunger+games&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/The_Hunger_Games_Official_Illustrated_Mo.html?hl=&id=7mlGBAAAQBAJ"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": false
+                },
+                "pdf": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.com/books/download/The_Hunger_Games_Official_Illustrated_Mo-sample-pdf.acsm?id=7mlGBAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=7mlGBAAAQBAJ&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "From the screenwriting process to the casting decisions to the elaborate sets and costumes to the actors&#39; performances and directors&#39; vision, this is the definitive companion to the breathtaking movie."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "oYN3MAEACAAJ",
+            "etag": "Wz0WDWqUX4A",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/oYN3MAEACAAJ",
+            "volumeInfo": {
+                "title": "The Hunger Games Slipcase",
+                "subtitle": "The Hunger Games; Catching Fire; Mockingjay",
+                "authors": [
+                    "Suzanne Collins"
+                ],
+                "publishedDate": "2012-10-01",
+                "description": "In the ruins of a place once known as North America lies the nation of Panem, a shining Capitol surrounded by twelve outlying districts. The Capitol is harsh and cruel and keeps the districts in line by forcing each of them to send one boy and one girl between the ages of twelve and eighteen to participate in the annual Hunger Games, a fight to the death on live TV. Sixteen-year-old Katniss Everdeen, who lives alone with her mother and younger sister, regards it as a death sentence when she is forced to represent her district in the Games.",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "1742835325"
+                    },
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9781742835327"
+                    }
+                ],
+                "readingModes": {
+                    "text": false,
+                    "image": false
+                },
+                "printType": "BOOK",
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "preview-1.0.0",
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=oYN3MAEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=oYN3MAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=oYN3MAEACAAJ&dq=intitle:hunger+games&hl=&cd=8&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=oYN3MAEACAAJ&dq=intitle:hunger+games&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/The_Hunger_Games_Slipcase.html?hl=&id=oYN3MAEACAAJ"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "NO_PAGES",
+                "embeddable": false,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": false
+                },
+                "pdf": {
+                    "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=oYN3MAEACAAJ&hl=&source=gbs_api",
+                "accessViewStatus": "NONE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "The Capitol is harsh and cruel and keeps the districts in line by forcing each of them to send one boy and one girl between the ages of twelve and eighteen to participate in the annual Hunger Games, a fight to the death on live TV. Sixteen ..."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "j38WswEACAAJ",
+            "etag": "eYMuGDNitiw",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/j38WswEACAAJ",
+            "volumeInfo": {
+                "title": "Los Juegos Del Hambre / the Hunger Games",
+                "authors": [
+                    "Suzanne Collins"
+                ],
+                "publisher": "Perfection Learning",
+                "publishedDate": "2012-03",
+                "description": "In a future North America, where the rulers of Panem maintain control through an annual televised survival competition pitting young people from each of the twelve districts against one another, sixteen-year-old Katniss's skills are put to the test when she voluntarily takes her younger sister's place.",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "1627656367"
+                    },
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9781627656368"
+                    }
+                ],
+                "readingModes": {
+                    "text": false,
+                    "image": false
+                },
+                "pageCount": 396,
+                "printType": "BOOK",
+                "categories": [
+                    "Juvenile Fiction"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "preview-1.0.0",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=j38WswEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=j38WswEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=j38WswEACAAJ&dq=intitle:hunger+games&hl=&cd=9&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=j38WswEACAAJ&dq=intitle:hunger+games&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/Los_Juegos_Del_Hambre_the_Hunger_Games.html?hl=&id=j38WswEACAAJ"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "NO_PAGES",
+                "embeddable": false,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": false
+                },
+                "pdf": {
+                    "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=j38WswEACAAJ&hl=&source=gbs_api",
+                "accessViewStatus": "NONE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "In a future North America, where the rulers of Panem maintain control through an annual televised survival competition pitting young people from each of the twelve districts against one another, sixteen-year-old Katniss&#39;s skills are put to ..."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "8vbeCQAAQBAJ",
+            "etag": "Kp/m8BXwPtI",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/8vbeCQAAQBAJ",
+            "volumeInfo": {
+                "title": "The Politics of The Hunger Games",
+                "authors": [
+                    "Jamey Heit"
+                ],
+                "publisher": "McFarland",
+                "publishedDate": "2015-06-08",
+                "description": "Set in the future dystopia of Panem, The Hunger Games trilogy follows the rise of a provincial rebellion against the wealthy and tyrannical \"Capitol.\" As narrator and heroine, Katniss Everdeen comes to embody the hope of the long oppressed for a new order. During her journey some of our most urgent political questions are addressed. What does it mean to be a leader? Can the oppressed recover a political identity that affirms individual values and freedoms? Do the media necessarily corrupt political discourse? This critical study of The Hunger Games explores novels in the context of how we think about the nature of politics, the value of the individual and the importance of political action. The author draws parallels between Panem and the Roman Empire, considering Herod's Massacre of the Innocents alongside Haymitch Abernathy's elusive political influence as mentor of tributes. Instructors considering this book for use in a course may request an examination copy here.",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9781476621043"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "1476621047"
+                    }
+                ],
+                "readingModes": {
+                    "text": true,
+                    "image": true
+                },
+                "pageCount": 201,
+                "printType": "BOOK",
+                "categories": [
+                    "Literary Criticism"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": true,
+                "contentVersion": "0.2.4.0.preview.3",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=8vbeCQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=8vbeCQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=8vbeCQAAQBAJ&printsec=frontcover&dq=intitle:hunger+games&hl=&cd=10&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=8vbeCQAAQBAJ&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=8vbeCQAAQBAJ"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                    "amount": 19.99,
+                    "currencyCode": "USD"
+                },
+                "retailPrice": {
+                    "amount": 19.99,
+                    "currencyCode": "USD"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=8vbeCQAAQBAJ&rdid=book-8vbeCQAAQBAJ&rdot=1&source=gbs_api",
+                "offers": [
+                    {
+                        "finskyOfferType": 1,
+                        "listPrice": {
+                            "amountInMicros": 19990000,
+                            "currencyCode": "USD"
+                        },
+                        "retailPrice": {
+                            "amountInMicros": 19990000,
+                            "currencyCode": "USD"
+                        },
+                        "giftable": true
+                    }
+                ]
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.com/books/download/The_Politics_of_The_Hunger_Games-sample-epub.acsm?id=8vbeCQAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "pdf": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.com/books/download/The_Politics_of_The_Hunger_Games-sample-pdf.acsm?id=8vbeCQAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=8vbeCQAAQBAJ&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "Instructors considering this book for use in a course may request an examination copy here."
+            }
+        }
+    ]
+}
