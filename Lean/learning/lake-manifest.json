@@ -5,7 +5,7 @@
    "type": "git",
    "subDir": null,
    "scope": "leanprover-community",
-   "rev": "1b03e7b14ec4cb0450bbb284076d9d9ba88c04df",
+   "rev": "c5b9dbc763dd48cc24cd0fc877a8cac824bed1f7",
    "name": "mathlib",
    "manifestFile": "lake-manifest.json",
    "inputRev": "master",
@@ -91,5 +91,5 @@
    "inputRev": "main",
    "inherited": true,
    "configFile": "lakefile.toml"}],
- "name": "test",
+ "name": "learning",
  "lakeDir": ".lake"}
