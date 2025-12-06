@@ -14,7 +14,7 @@ public class Huffman {
         List<Node> tuples = new ArrayList<>();
 
         for (String input : inputs) { 
-            Tuple<String, Integer> t = new Tuple<>(input, getFreq(input, target));
+            LocTuple<String, Integer> t = new LocTuple<>(input, getFreq(input, target));
             tuples.add(new Node(t));
         }
         tuples.sort(new TupleComparator());
@@ -23,7 +23,7 @@ public class Huffman {
             Node left = tuples.remove(0);
             Node right = tuples.remove(0);
 
-            Tuple<String, Integer> newNode = new Tuple<>(
+            LocTuple<String, Integer> newNode = new LocTuple<>(
                 left.getContents().getFirst() + "," + right.getContents().getFirst(),
                 left.getContents().getSecond() + right.getContents().getSecond()
             );
@@ -68,15 +68,15 @@ public class Huffman {
 class Node {
     private Node left;
     private Node right;
-    private Tuple<String, Integer> contents;
+    private LocTuple<String, Integer> contents;
 
-    public Node(Tuple<String, Integer> contents) {
+    public Node(LocTuple<String, Integer> contents) {
         this.contents = contents;
         this.left = null;
         this.right = null;
     }
 
-    public Node(Tuple<String, Integer> contents, Node left, Node right) {
+    public Node(LocTuple<String, Integer> contents, Node left, Node right) {
         this.contents = contents;
         this.left = left;
         this.right = right;
@@ -90,7 +90,7 @@ class Node {
         return right;
     }
 
-    public Tuple<String, Integer> getContents() {
+    public LocTuple<String, Integer> getContents() {
         return contents;
     }
 }

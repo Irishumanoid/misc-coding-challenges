@@ -23,8 +23,8 @@ public class Strassen {
         double[][] a = one.get(0); double[][] b = one.get(1); double[][] c = one.get(2); double[][] d = one.get(3); 
         double[][] e = two.get(0); double[][] f = two.get(1); double[][] g = two.get(2); double[][] h = two.get(3); 
 
-        Function<Tuple<Double, Double>, Double> subtract = subtract();
-        Function<Tuple<Double, Double>, Double> add = add();
+        Function<LocTuple<Double, Double>, Double> subtract = subtract();
+        Function<LocTuple<Double, Double>, Double> add = add();
 
         double[][] s1 = multiplyMatrices(a, combineMatrices(f, h, subtract));
         double[][] s2 = multiplyMatrices(combineMatrices(a, b, add), h);
@@ -82,21 +82,21 @@ public class Strassen {
     }    
 
 
-    public double[][] combineMatrices(double[][] matOne, double[][] matTwo, Function<Tuple<Double, Double>, Double> operation) {
+    public double[][] combineMatrices(double[][] matOne, double[][] matTwo, Function<LocTuple<Double, Double>, Double> operation) {
         double[][] result = new double[matOne.length][matOne[0].length];
         for (int i = 0; i < matOne.length; i++) {
             for (int j = 0; j < matOne[0].length; j++) {
-                result[i][j] = operation.apply(new Tuple<Double,Double>(matOne[i][j], matTwo[i][j]));
+                result[i][j] = operation.apply(new LocTuple<Double,Double>(matOne[i][j], matTwo[i][j]));
             }
         }
         return result;
     }
 
-    public Function<Tuple<Double, Double>, Double> subtract() {
+    public Function<LocTuple<Double, Double>, Double> subtract() {
         return (input) -> input.getFirst() - input.getSecond();
     }
 
-    public Function<Tuple<Double, Double>, Double> add() {
+    public Function<LocTuple<Double, Double>, Double> add() {
         return (input) -> input.getFirst() + input.getSecond();
     }
     public static void main(String[] args) {
