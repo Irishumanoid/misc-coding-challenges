@@ -22,6 +22,10 @@ std::ostream& operator<<(std::ostream &out, Direction direction) {
 namespace UserInput {
     static constexpr std::array<char, 5> valid = {'w', 'a', 's', 'd', 'q'};
 
+    void clearInput() {
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+    }
+
     bool isDirValid(char input) {
         return std::find(valid.begin(), valid.end(), input) != valid.end();
     }
@@ -37,7 +41,7 @@ namespace UserInput {
                 }
                 return input;
             } else {
-                std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+                clearInput();
             }
         }
     }
@@ -74,10 +78,12 @@ int main(int argc, char const *argv[]) {
             std::cout << "You entered direction: " << dir << '\n';
             board.moveTile(dir);
             if (board.hasWon()) {
+                std::cout << "You win!";
                 break;
             }
             std::cout << board; 
         }
+        UserInput::clearInput();
     }
 
     return 0;

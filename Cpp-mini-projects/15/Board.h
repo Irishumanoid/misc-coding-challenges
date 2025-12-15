@@ -85,13 +85,10 @@ class Board {
                         if (swap.x >= 0 && swap.x < 4 && swap.y >= 0 && swap.y < 4) {
                             tiles[i][j] = tiles[swap.x][swap.y];
                             tiles[swap.x][swap.y] = Tile(0);
+                            return;
                         }
-                        break;
                     }
                 }
-            }
-            if (hasWon()) {
-                std::cout << "You win!";
             }
         }
 
